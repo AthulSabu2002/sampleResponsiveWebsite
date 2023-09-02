@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-WebPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      html,body
+      {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+      }
+    </style>
+</head>
+<body class="body">
+  <header>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: lightblue;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#n" title="logo">
+          <img src="./images/buildlogo.png" width="120" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav  mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="#home" style="color: black; font-size:larger; font-weight: bolder;">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#register" style="color: black; font-size:larger; font-weight: bolder;">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mentors" style="color: black; font-size:larger; font-weight: bolder;">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#participates" style="color: black; font-size:larger; font-weight: bolder;">Participates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <section id="home" style="padding-top: 68px;">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="display: block;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/carousel.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carousel.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+            <div class="row mt-4">
+              <h5 class="text-center mt-5">JOIN US</h5>
+              <p class="text-center" style="font-size: larger;">pygrammers is a python enthusiasts with similar ideologies and interests.</p>
+              <div class="d-grid gap-2 justify-content-center">
+                <a class="btn btn-primary mb-5" href="#" role="button">Telegram</a>     
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+</section>
+
+    
+<section id="register">
+  <div class="container">
+    <div class="container min-vh-100 d-flex  justify-content-center align-items-center col-12 col-sm-12 col-md-10 col-lg-10 col-xl-5">
+      <div class="card text-center border-dark w-70 min-vh-90 d-flex">
+          <div class="card-body mb-6">
+              <div class="mb-0"><h6 class="mb-0">FORM:</h6></div>
+              <form>
+                  <div class="form-group form-control-lg">
+                    <label for="name" >Name</label>
+                    <input type="text" class="form-control form-control-lg" id="name" aria-describedby="textHelp" placeholder="Enter name">
+                  </div>
+                  <div class="form-group form-control-lg">
+                      <label for="MobileNumber">Mobile Number</label>
+                      <input type="tel" class="form-control form-control-lg" id="MobileNumber" aria-describedby="textHelp" placeholder="Enter Mobile Number">
+                    </div>
+                  <div class="form-group form-control-lg">
+                      <label for="InputEmail">Email</label>
+                      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group form-control-lg">
+                      <label for="institutionName">Company/Institution Name</label>
+                      <input type="text" class="form-control" id="institutionName" aria-describedby="textHelp" placeholder="Company/Institution Name">
+                  </div>
+  
+                  <div class="row">
+                      <small id="uploadHelp" class="form-text text-muted">Upload a short video or image of handwitten sheet showing your interest to join build.myweb</small>
+                      <input type="file" class="form-control-file" name="" id="" title="file" value="Choose File">
+                  </div>
+  
+  
+                  <div class="form-group"> 
+                      <input type="text" class="form-control form-control-lg" id="experience" placeholder="Have you attented any events by pygrammers before?">
+                    </div>
+  
+  
+                  <button type="submit" class="btn btn-primary">Submit Form</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section id="mentors" style="padding-top: 68px;">
+
+<div class="container justify-content-center">
+    <div class="row mb-4 justify-content-center gy-3 ">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-4 ml-5 justify-content-center" style="padding: 5;">
+        <div class="card h-100 justify-content-center" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-4 justify-content-center">
+        <div class="card justify-content-center" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4 justify-content-center">
+        <div class="card justify-content-center" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4 justify-content-center gy-3">
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4">
+        <div class="card" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4">
+        <div class="card" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4">
+        <div class="card" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4 justify-content-center gy-3">
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4">
+        <div class="card" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4">
+        <div class="card" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-10 col-xl-4">
+        <div class="card" style="margin-right: 30px;">
+          <img src="./images/elon musk.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+
+<footer class="bg-dark mt-3 justify-content-center" style="left:0;right:0;">
+  <div class="container-fluid justify-content-center" style="color: white;display: flex;">
+    <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight">
+        <span>
+          <a href="#" style="margin-top: 1rem;"><img src="./images/instagram.svg" alt="" width="50" height="50"></a>
+          <a href="#" style="margin-top: 1rem;"><img src="./images/telegram.svg" alt="" width="50" height="50"></a>
+          <a href="#" style="margin-top: 1rem;"><img src="./images/linkedin.svg" alt="" width="50" height="50"></a>
+        </span>
+      </div>
+      <div class="p-2 bd-highlight">
+        <span>
+          <a href="#home" style="text-decoration: none;color: #ffff;"><p class="fs-1 fw-bold" style="color: #ffff;">pygrammers</p></a>
+        </span>
+      </div>
+    </div>
+   
+  </div>
+</footer>
+
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
